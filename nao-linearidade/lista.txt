@@ -1,0 +1,15 @@
+Uma lista nada mais é do que o conjunto de diversos elementos organizados
+em uma determinada sequencia, sendo passível de inserções e remoções.
+
+Lista Encadeadas
+Na computação uma lista é implementada como uma lista encadeada.
+Um elemento é encadeado à outro de forma que cada elemento tem:
+ * no máximo 1 elemento subsequente
+ * no máximo 1 elemento antecedente
+Uma lista encadeada, podem ocorrer inserções e remoções em quaisquer posições da lista
+
+Uma lista encadeada é implementada com a utilização de:
+ * Structs: que representa cada um dos elementos da lista
+ * Ponteiros: realizam o encadeamento entre um elemento e outro
+ * Alocação Dinâmica: responsável por resevar espaço em tempo de execução para
+novos elementos da lista encadeada.
