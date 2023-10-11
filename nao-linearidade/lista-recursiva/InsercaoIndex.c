@@ -41,6 +41,26 @@ void addIndex(float x, float y, int index){
     }
 }
 
+void removeIndex(int index){
+    if (index>length || length==0){
+        printf("Posisao invalida ou lista vazia");
+    }else{
+        if (index==0){
+            listaPontos = listaPontos->prox;
+        }else{
+            Ponto *listaAux = listaPontos;
+            int i=0;
+            while (i!=index-1){
+                listaAux = listaAux->prox;
+                i++;
+            }
+            listaAux->prox = listaAux->prox->prox;
+        }
+        length--;
+    }
+    
+}
+
 void imprime(Ponto *p){
     if (p!=NULL)
     {
@@ -50,12 +70,13 @@ void imprime(Ponto *p){
 }
 
 int main(){
-
-    addIndex(1,1,0);
+    addIndex(0,0,0);
     addIndex(2,9,1);
     addIndex(4,3,2);
     addIndex(6,7,2);
-    addIndex(0,0,0);
+
+    removeIndex(0);
+    removeIndex(0);
 
     Ponto *auxLista = listaPontos;
     imprime(auxLista);
