@@ -25,9 +25,10 @@ void troca(int A[], int i, int j){
 
 void bubbleSort(int vetor[], int n){
     for (int i = 0; i < n; i++){
-        for (int j = 0; j < n-1; j++){
-            if (vetor[j]>vetor[j+1])
-            troca(vetor, j, j+i);
+        for (int j = 0; j < n-i-1; j++){
+            if (vetor[j]>vetor[j+1]){
+                troca(vetor, j, j+i);
+            }
         }
         
     }

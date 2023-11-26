@@ -28,11 +28,21 @@ void add(char cor){
     pilha = p;
 }
 
+void remove(){
+    if (pilha == NULL){
+        printf("Pilha esta vazia");
+    }else{
+        pilha = pilha->prox;
+    }
+    
+}
+
 int main(){
     add('a');
     add('b');
     add('c');
     add('d');
+    remove();
 
     Prato *pilhaAux = pilha;
 
