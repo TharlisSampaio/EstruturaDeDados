@@ -28,7 +28,7 @@ void add(char cor){
     pilha = p;
 }
 
-void remove(){
+void remover(){
     if (pilha == NULL){
         printf("Pilha esta vazia");
     }else{
@@ -42,7 +42,7 @@ int main(){
     add('b');
     add('c');
     add('d');
-    remove();
+    remover();
 
     Prato *pilhaAux = pilha;
 

@@ -91,7 +91,7 @@ int main(){
     addNodo(root, 4);
     addNodo(root, 2);
     addNodo(root, 8);
-    removeNodo(root, 3);
+    // removeNodo(root, 3);
 
     imprimirArvore(root);
 

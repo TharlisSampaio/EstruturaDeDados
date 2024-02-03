@@ -4,7 +4,7 @@
 /*
     Um algoritmo de ordenação com complexidade nlogn é aquele que pode
     ordenar uma lista de tamanho n em tempo proporcional a nlogn.
-    Algoritmo de ordenação com complexidade n^2 são aquele que realizam
+    Algoritmo de ordenação com complexidade n^2 são aqueles que realizam
     cerca de n^2 comparações para ordenar um arranjo com N elementos.
 */
 
@@ -28,6 +28,7 @@ void bubbleSort(int V[], int N){ // revebe um vetor, e o tamanho dele
                 continua = i; // continua recebe i, somente se a condição se satisfazer!, para que o do while não pare ate pecorrer todo array
             }
         }
+        fim--;
 
     } while (continua != 0);
     
@@ -99,7 +100,7 @@ void imprimeVetor(int V[], int N){
 
 int main(){
     int vetor[13] = {10, 1, 20, 3, 7, 40, 30, 4, 17, 45, 18, 30, 17};
-    mergeSort(vetor, 0, 13);
+    bubbleSort(vetor, 13);
     imprimeVetor(vetor, Num);
 
     return 0;

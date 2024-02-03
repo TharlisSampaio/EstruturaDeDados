@@ -34,7 +34,7 @@ void add(int senha){
 
 }
 
-void remove(){
+void remover(){
     if (fila == NULL){
         printf("Fila vazia");
     }else{
@@ -64,14 +64,14 @@ int main(){
     imprime(fila);
     printf("\n");
 
-    remove();
-    remove();
+    remover();
+    remover();
 
     imprime(fila);
     printf("\n");
 
-    remove();
-    remove();
+    remover();
+    remover();
 
     imprime(fila);
     printf("\n");
