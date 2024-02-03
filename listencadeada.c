@@ -168,3 +168,21 @@ void imprimir(lista *l){
     	aux = aux->prox;         	// o nó auxiliar aponta para o próximo nó
 	}
 }
+
+lista *excluir(lista *l, int valor){
+    lista *aux = l, *ant = NULL;
+
+    while(aux != NULL && aux->valor != valor){
+        ant = aux;
+        aux = aux->prox;
+    }
+
+    if(aux != NULL){
+        if(ant == NULL){
+            l = aux->prox;
+        }
+    }else{
+        ant->prox = aux->prox;
+    }
+
+}
